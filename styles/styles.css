@@ -2,3 +2,7 @@ html {
   background-color: #867B7B;
   font-family: 'Mukta Mahee', sans-serif; 
 }
+
+.container {
+  background-color: white;
+}
