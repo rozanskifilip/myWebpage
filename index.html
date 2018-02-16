@@ -4,20 +4,129 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="FilipRozanski">
-  <title>Filip Różański</title>
-  <link rel="stylesheet" type="text/css" href="./layout/styles/normalize.css">
-  <link rel="stylesheet" href="styles/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee:400,600&amp;subset=latin-ext" rel="stylesheet">
-  <link rel="stylesheet" href="styles/bootstrap-grid.css">
+  <title>Filip Różański - CV</title>
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/bootstrap-grid.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="jquery.scrollTo.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/scripts/normalize.css">
+  <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 <body>
-<h1>Cześć</h1>
-<div class="container">
-    <div class="row">   
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            element zajmujący maksymalną liczbę kolumn, czyli 12
+  <div class="background">      
+    <header class="container">      
+      <div id="selection" class="row"> 
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <a class="name">FILIP RÓŻAŃSKI | </a>
         </div>
-    </div>   
-</div>
+        <div id="button" class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <a href="#myAnchor1" rel="" class="scroll">CV</a>
+        </div>
+        <div id="button" class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <a href="#myAnchor2" rel="" class="scroll">Umiejętności</a>
+        </div>
+        <div id="button" class="menu col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <div id="item">Kontakt</div>
+          <div id="submenu">
+            <a href="https://www.facebook.com/rozanski.filip" target="_blank">Facebook</a>
+            <a href="https://www.linkedin.com/in/filip-r%C3%B3%C5%BCa%C5%84ski-a82426157/" target="_blank">LinkedIn</a>
+            <a href="mailto:frozanski94@gmail.com" target="_blank">Email</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="aboutMe">
+      <div class="row">   
+        <div class="col-xs-10 col-sm-8 col-md-8 col-lg-8">
+          <p class="paragraph">
+            Cześć!
+            <br>
+            <br>
+            Nazywam się Filip i chcę zostać frontend developerem. Jeśli szukasz stażysty lub pracownika na tym stanowisku to chętnie podejmę się tego wyzwania. Strona ta jest demonstracją umiejętności, które już posiadam. Została od początku do końca zapisana przeze mnie. 
+          </p>  
+        </div>
+      </div>
+    </section>
+    <div class="photoContainer">
+      <img src="assets/img/green-flow-background.jpg" class="photo">
+      <div class="overlay">
+        <div class="text">Curriculum Vitae
+        </div>
+      </div>
+    </div>
+    <a name="myAnchor1" id="myAnchor1" class="navigate">CV</a>
+    <section id="CV">Poniżej znajdują się linki do CV w języku polskim oraz angielskim:
+      <br>
+      <br>
+      <div id="button">
+        <a href="assetss/documents/cv.pdf" target="_blank">Curriculum Vitae</a>
+      </div> 
+      <div id="button">
+        <a href="assets/documents/cv_ang.pdf" target="_blank">Curriculum Vitae <em>(english version)</em></a>
+      </div> 
+    </section>
+    <div class="photoContainer"> 
+      <img src="assets/img/checkered-green-white.jpg" class="photo">
+      <div class="overlay">
+        <div class="text">Umiejętności</div>  
+      </div>
+    </div>
+    <section id="skills">
+      <a name="myAnchor2" id="myAnchor2" class="navigate">Umiejętności</a>
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          <p class="title">
+            HTML
+          </p>
+          <ul>
+            <li>odpowiednia semantyka kodu</li>
+            <li>Google Fonts</li>
+            <li>nowe znaczniki HTML5 w celu precyzyjnego definiowania poszczegulnych części kodu</li>
+            <li>poprawne posługiwanie się znacznikami strukturalnymi</li>
+            <li>hiperłącze, które przenosi użytkownika w wybrane miejsce na stronie</li>
+            <br>
+          </ul>
+          <p class="title">
+            JAVASCRIPT
+          </p>
+          <ul>
+            <li>znajomość podstawowych typów danych w JavaScript</li>
+            <li>pisanie funkcji</li>
+            <li>pętla for</li>
+          </ul>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          <p class="title">
+            CSS
+          </p>
+          <ul>
+            <li>umieszczanie elementów na siatce</li>
+            <li>Responsive Web Design</li>
+            <li>znajomość podstawowych i zaawansowanych selektorów CSS</li>
+            <li>dziedziczenie - zasady działania oraz praktyka</li>
+            <li>hierarchia stylów CSS</li>
+            <li>szeregowe układanie elementów blokowych dzięki właściwości display i jej wartości inline-block</li>
+          </ul>
+          <p class="title">
+            jQuery
+          </p>
+          <ul>
+            <li>przycisk backToTop</li>
+            <li>funkcja scrollTo</li>
+            <li>dropDown menu</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="footer">
+      Autor: Filip Różański | 2018r. Wszystkie prawa zastrzeżone ©
+      <br>
+      Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. 2016 r. poz. 922).
+    </section>
+    <a href="#" id="back-to-top" title="Back to top">TOP</a>
+  </div> 
 </body>
 </html>
